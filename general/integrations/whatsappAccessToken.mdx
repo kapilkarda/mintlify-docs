@@ -1,0 +1,145 @@
+---
+title: Token de acceso de WhasApp
+description: "Esta página describe todo sobre la generación de tokens de acceso de whatsApp"
+---
+
+## Pasos para obtener un token de acceso permanente
+
+1. ⦁ Acceda a [la configuración de la empresa:](https://turivishal.medium.com/permanent-access-token-for-whatsapp-business-apis-c81e1dfc86c7)<br/>
+
+   - Ve a Configuración de la empresa.
+
+2. ⦁ Vaya a Usuarios del sistema:<br/>
+   - ⦁ En Usuarios, haga clic en Usuarios del sistema.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/1.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+3. Crear un usuario del sistema:<br/>
+   - Haga clic en el botón Agregar.
+   - Proporcione un nombre para el usuario del sistema.
+   - Seleccione un rol.
+   - Haga clic en Crear usuario del sistema.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/2.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+4. Aceptar la política de no discriminación:<br/>
+
+   - Revise y acepte la política de no discriminación en nombre de los usuarios de su sistema.
+
+5. Finalizar la creación:<br/>
+
+- Después de aceptar la política, haga clic en Listo.
+
+6. Asociación de aplicaciones (si es necesario):<br/>
+
+   - Si recibes un error que indica que una aplicación debe formar parte de la empresa, primero debes crear una aplicación de Facebook asociada a tu Business Manager. Una vez creada la aplicación, vuelva a este paso.
+
+7. Agregar aplicación::<br/>
+
+- En Cuentas, haga clic en Aplicaciones.
+- Haga clic en el menú desplegable Agregar.
+- Seleccione Conectar un ID de aplicación.
+- Ingresa el ID de la aplicación de Facebook.
+- Haga clic en Agregar aplicación.
+
+8. Asigna recursos como tus páginas, cuentas publicitarias, aplicaciones de Facebook y catálogos.<br/>
+
+- Haga clic en el botón Agregar activos, se abrirá un modelo y podrá ver, 1. Seleccione el tipo de activo, 2. Seleccione los recursos y 3. Aplicación.
+  <Frame>
+    <img
+      src="/images/whatsapp-business-id/5.webp"
+      style={{ borderRadius: "0.5rem" }}
+    />
+  </Frame>
+- Haga clic en Aplicaciones en Seleccionar tipo de activo, disponible en la esquina izquierda.
+- Haga clic en las casillas de verificación de la aplicación específica a las que desea proporcionar acceso al usuario actual en Seleccionar recursos, disponible en la sección central.
+- Haga clic en la opción de alternancia Administrar aplicación y habilítela para todos los accesos, puede personalizarla con otras opciones disponibles en esta sección de aplicaciones.
+- Finalmente, haga clic en el botón Guardar cambios.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/6.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+### "Felicitaciones, ha agregado activos con éxito".
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/7.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+Ahora puede ver los activos agregados en los activos asignados
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/8.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+<b>'Generar token de acceso'</b>
+
+1. Haga clic en el botón Generar nuevo token.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/9.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+2. Seleccione una aplicación para la que desee generar un token.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/10.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+3. Puede ver la lista de Información, Advertencias y una sección <b>Permisos disponibles.</b>
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/11.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+4. Desplácese hacia abajo hasta los permisos disponibles, hay una lista de componentes de la API, debe seleccionar "whatsapp_business_messaging" y "whatsapp_business_management" para acceder a las API de WhatsApp Business y hacer clic en el botón Generar token.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/12.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+5. Aparecerá como un modelo y podrá ver el token de acceso recién generado, simplemente copie el token de acceso y guárdelo en un lugar seguro, es decir, el archivo de entorno (env) de su proyecto.
+
+<Frame>
+  <img
+    src="/images/whatsapp-business-id/13.webp"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+<Note>
+  Copie y guarde este token ya que no se almacenará en Facebook, recuerde, solo
+  puede compartir un token una vez. Cada nuevo usuario del sistema requiere un
+  token recién generado.
+</Note>

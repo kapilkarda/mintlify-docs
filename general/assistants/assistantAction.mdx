@@ -1,0 +1,186 @@
+---
+title: Acciones del asistente
+description: ""
+---
+
+## En la funcionalidad de Asistentes:
+
+### Transferencia de llamadas:
+
+Debajo de la opción de grabación, encontrará la opción "Transferencia de llamadas". Aquí, puede ingresar el número de transferencia para que cuando alguien quiera devolverle la llamada, pueda hacerlo. Agregue una descripción para el número de transferencia.
+
+### Enviar SMS y WhatsApp:
+
+#### SMS:
+
+El agente puede enviar un SMS al usuario cuando se cumplan ciertas condiciones <br/>
+(se requiere el registro A2P 10DLC para todas las comunicaciones SMS).
+
+Sólo tienes que introducir el contenido del SMS y establecer las condiciones. Puede optar por enviarlo después de que finalice la llamada.
+
+#### WhatsApp:
+
+Seleccione una plantilla de WhatsApp ( que haya creado en SMTP a través de la opción de integración. ). Especifique cuándo se debe enviar el mensaje y elija enviarlo después de que finalice la llamada si lo prefiere.
+
+### Enviar correo electrónico
+
+El agente también puede enviar un correo electrónico cuando se cumplan las condiciones.<br/>
+
+- Elija la plantilla de correo electrónico, introduzca el asunto y establezca las condiciones.
+- Puede decidir enviarlo una vez finalizada la llamada
+
+### Opción SMTP (Enviar correo electrónico).
+
+Desde aquí, el agente puede enviar al usuario un correo electrónico con el contenido deseado cuando se cumplan condiciones específicas.<br/>
+
+- Seleccione la plantilla de correo electrónico que creó a través de la integración SMTP.
+- Introduzca el asunto del correo electrónico.
+- Especifique las condiciones en las que se enviará el correo electrónico.
+- Elija si desea enviar el correo electrónico después de que finalice la llamada, según sus preferencias. <br/>
+  A continuación, cree
+
+### Extractor de información:
+
+Verás el siguiente <span style={{ fontWeight: 800 }}>Extractor de Información</span>. Aquí puedes agregar la pregunta de tres maneras:
+
+1. Pregunta Sí/No: Agregue una pregunta que pueda responderse con un simple "Sí" o "No".
+2. Opción única: Proporciona varias opciones para el usuario, pero solo puede seleccionar una.
+3. Pregunta abierta: Agregue una pregunta abierta que permita al usuario proporcionar una respuesta libre.
+
+Aquí quiero agregar una pregunta de Sí/No.
+
+Ahora ingrese el nombre del identificador, correo electrónico o cualquier cosa que desee. Tengo un nombre, Allison, como identificador. Añade la pregunta "¿Has oído hablar antes de Pagovisio AI?". La pregunta ahora está guardada y puede editarla o eliminarla si es necesario. Agregue preguntas y opciones en las opciones Opción única y Pregunta abierta, según sus preferencias, luego haga clic en Crear.
+
+Aquí está la información en el formato correcto:
+
+### Estos son los pasos para sincronizar datos entre Pagovisio AI y tu CRM (HubSpot, Salesforce y Zapier Hook):
+
+1. Después de realizar una llamada entrante o saliente en Pagovisio AI, los datos de la llamada se actualizarán automáticamente en su(s) plataforma(s) de CRM conectada(s).
+
+2. Para administrar la acción de sincronización de CRM, vaya al panel de control de Pagovisio AI, haga clic en el campo del asistente y actualice la configuración de su asistente haciendo clic en el botón nuevo asistente.
+
+3. En el asistente, en la esquina inferior derecha, encontrará Sincronizar datos con CRM.
+
+4. En esta acción, puedes seleccionar con qué plataforma(s) de CRM quieres sincronizar los datos: puedes elegir HubSpot, Salesforce o Zapier Hook.
+
+5. Una vez que haya seleccionado su(s) plataforma(s) de CRM preferida(s), haga clic en "Guardar" para aplicar la configuración.
+
+6. Abra la opción de lista de contactos y cree una nueva lista de contactos.
+
+7. Haga clic en el botón "Crear" para crear una nueva lista de contactos o seleccione una lista de contactos en particular y vincúlela con HubSpot, Salesforce o Zapier Hook.
+
+8. Ve al campo de campaña, Crear una nueva campaña
+
+9. Rellena todos los datos requeridos para la campaña.
+
+10. Elija la lista de contactos que está vinculada con HubSpot, Salesforce o Zapier Hook Ejecutar la campaña
+
+Luego, todos los datos de tus llamadas entrantes o salientes en Pagovisio AI se sincronizarán automáticamente con tu CRM conectado de HubSpot, Salesforce o Zapier Hook.
+
+### Gancho Zapier.
+
+La IA de Pagovisio te permite configurar acciones como reservar citas y enviar enlaces a través de Zapier. Demasiadas acciones pueden confundir a la IA, así que mantén un número pequeño de acciones para obtener los mejores resultados.
+
+Para configurar una integración de Zapier:
+
+1. Ve a Zapier.com e inicia sesión en tu cuenta.
+
+2. En el panel de control, haga clic en el botón "Crear" para crear un nuevo Zap (flujo de trabajo automatizado).
+
+3. Para el activador, seleccione "Webhooks by Zapier" y elija el evento "Catch Hook", luego haga clic en "Continuar".
+
+4. En el paso "Prueba", encontrarás la URL de tu Webhook. Copie esta URL y péguela en el campo "Zapier Hook" debajo de la opción "Asistente" en Pagovisio AI.
+
+Siguiendo estos pasos, puedes integrar Pagovisio AI con Zapier y configurar acciones automatizadas a través de la plataforma Zapier.
+
+### Reserva en tiempo real
+
+En esta actualización, puede programar una reserva durante una llamada con Cal.com. y GHL. Para obtener cal.com, debe ingresar su clave de API y el ID de evento de Cal. Estos son los pasos para crear una clave de API iniciando sesión en Cal.com.
+
+Pasos para crear una clave API en Cal.com:
+
+1. Buscar Cal.com:
+
+   - Abra su navegador y busque "Cal.com".
+
+2. Regístrese o inicie sesión:
+
+   - Haga clic en el botón "Comenzar".
+   - Puede registrarse ingresando su nombre de usuario, ID de correo electrónico y contraseña o continuar con Google o SAML.
+   - Prefiero seguir con Google.
+
+3. Continúa con Google:
+
+   - Selecciona tu cuenta de Google y continúa.
+
+4. Configuración del perfil:
+
+   - Deberá proporcionar información básica para configurar su perfil. Puede editar esta información más adelante.
+   - Siga estos pasos uno por uno:
+
+     - Ingrese su nombre de usuario y nombre completo.
+     - Seleccione su zona horaria según sus necesidades.
+
+5. Conecta tu calendario:
+
+   - Conecte su calendario para verificar automáticamente las horas ocupadas y los nuevos eventos a medida que se programan.
+   - Prefiero Google Calendar. Al conectarse, le pedirá su cuenta de Gmail. Confírmelo y seleccione a qué Cal.com puede acceder según sus preferencias.
+
+6. Conectar aplicaciones de video:
+
+   - Conecte sus aplicaciones de video para usarlas en sus tipos de eventos. Elige según tus necesidades.
+
+7. Definir disponibilidad:
+   - Defina intervalos de tiempo en los que esté disponible. Puede personalizar todo esto más adelante en la página de disponibilidad.
+
+Siguiendo estos pasos, podrás configurar tu perfil en Cal.com y generar una clave API necesaria para la reserva en tiempo real.
+
+Estos son los pasos:
+
+1. Complete el proceso de inicio de sesión.
+2. Vaya a la sección "Tipos de eventos".
+3. Haga clic en el evento de la reunión.
+4. Localice el ID de evento de llamada en la dirección URL, que será una secuencia de números.
+
+Para acceder a las claves de API que le permiten realizar llamadas a la API para su cuenta.
+
+1. Haga clic en el botón de configuración.
+2. Localiza la opción "Claves API" y ábrela.
+3. Crea tu primera clave de API introduciendo un nombre para la clave.
+4. Establezca la fecha de vencimiento o elija la opción "Nunca caduca" para guardar la clave API.
+
+<Frame>
+  <img src="/images/calcom.gif" style={{ borderRadius: "0.5rem" }} />
+</Frame>
+
+A continuación, obtendrá su clave API.
+
+- Introduzca la clave API.
+- Introduzca el ID del evento.
+- Seleccione Zona horaria.
+- Establezca la fecha de reserva inicial.
+- Proporcione una descripción.
+- Especifique las condiciones.
+- Salvar.
+
+Para GHL (GoHighLevel):
+
+- Selecciona el calendario y haz clic en "Siguiente".
+- Seleccione la zona horaria.
+- Establezca la fecha de reserva inicial.
+- Proporcione una descripción.
+- Intenta alcanzar el objetivo.
+- Salvar.
+
+Para obtener más detalles sobre GHL, consulte las opciones de integración.
+
+Para Open Booking, además de programar reservas, también puedes realizar los siguientes pasos:
+
+- Seleccione la hora de inicio.
+- Seleccione la hora de finalización.
+- Elige los días.
+- luego haga clic en "Siguiente".
+- Establecer la fecha de reserva inicial.
+- Proporcionar una descripción.
+- Apunta a alcanzar el objetivo.
+- Ahorrar.
