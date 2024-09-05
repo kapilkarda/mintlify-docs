@@ -47,7 +47,7 @@
       "pages": ["introduction", "general/dashboard", "ai-features"]
     },
     {
-      "group": "Pagovisio AI Enterprise",
+      "group": "Pagovision AI Enterprise",
       "pages": ["general/enterprise/fineTuning", "general/enterprise/rateLimit"]
     },
     {
