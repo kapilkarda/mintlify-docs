@@ -127,7 +127,8 @@
             },
             "general/integrations/gohighlevel",
             "general/integrations/elevenLabs",
-            "general/integrations/cartesia"
+            "general/integrations/cartesia",
+            "general/integrations/zoho"
           ]
         },
         "general/profileMenu/billing",
